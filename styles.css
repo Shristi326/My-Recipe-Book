@@ -1,0 +1,310 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img.jpg');
+    background-size: cover; 
+    color: #000000;
+    line-height: .7;
+}
+
+header {
+    background: rgba(0, 121, 107, 0.8);
+    color: #ffffff;
+    border:#031614;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+}
+
+main {
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(199, 241, 201, 0.678);
+    border-radius: 10px;
+}
+
+#filter {
+    padding: 10px; 
+    border: 1px solid #000000; 
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 400px;
+    font-size: 18px; 
+}
+section {
+    margin-bottom: 20px;
+}
+
+
+#filter:hover{
+    border: 1px solid #000000;
+    border:#000000;
+    border-radius: 6px;
+    
+}
+#search-bar {
+    background-color: #031614; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
+
+
+#search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 10; 
+    border-radius : 5px; 
+    font-size: 16px; 
+}
+
+#search-bar input::placeholder {
+    color: #eb8c8c; 
+}
+
+input[type="text"], 
+textarea, 
+button {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    font-size: 16px; /* Adjust the size as needed */
+    font-weight: bold; /* Make the font bold */
+    padding: 10px; /* Add some padding for better spacing */
+    margin-bottom: 10px; /* Space between form elements */
+    width: 100%; /* Makes the input and textarea full width */
+    box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+button {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+
+input[type="text"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+
+    background: #00796b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+h2 {
+    color: #000504;
+}
+
+
+#recipe-form{
+    background: rgb(200, 231, 206); 
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 10px 10px 8px 10px rgb(3, 58, 26);
+    overflow: hidden;
+}
+input[type="text"], textarea, input[type="file"] {
+    width: calc(100% - 20px); /* Subtract padding for equal spacing */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+textarea {
+    width: calc(100% - 20px);
+    resize: vertical;
+    min-height: 100px; 
+    max-height: 300px; 
+    
+}
+
+
+input[type="file"] {
+    padding: 0; 
+}
+
+#recipes{
+    background-color:  #00796b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+.center-text {
+    text-align: center;
+    width: 100%; 
+}
+#recipe-form {
+    margin-bottom: 40px; 
+}
+
+h2 {
+    margin-top: 0; 
+}
+
+#recipe-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    padding: 0; 
+    margin: 0; 
+
+   
+    box-shadow: 0 4px 10px rgba(230, 233, 231, 0.2);
+}
+.recipe-title {
+    text-align: center; /* Centers the title */
+    font-family: 'Arial', sans-serif; /* Change this to your desired font */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 10px 0; /* Adds margin above and below the title */
+}
+
+.recipe-item {
+    margin: 10px;
+    width: calc(30% - 20px); 
+    display: flex;
+    flex-direction: column; 
+    background: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+    transition: transform 0.3s; 
+}
+header:hover{
+    border:#004d40;
+}
+
+.recipe-item:hover {
+    transform: scale(1.05); 
+}
+
+.recipe-item img {
+    width: 100%; 
+    height: auto; 
+    max-height: 150px; 
+    object-fit: cover; 
+    border:none;
+}
+
+
+.recipe-item h3 {
+    margin: 10px 0;
+    font-size: 1.6em; 
+    text-align: center; 
+}
+
+.recipe-item p {
+    padding: 0 10px;
+}
+
+
+
+article {
+    flex: 0 0 calc(33.333% - 10px); 
+    margin: 5px; 
+    /* background: #dceed4; */
+    border-radius: 1px;
+    padding: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #00796b; 
+
+   
+}
+
+
+article img {
+    width: 100%;
+    height: 150px; 
+    /* max-height: none;  */
+    max-width: none; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom : 1ch;
+
+  
+}
+
+
+
+
+
+
+p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+ 
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+    
+    #filter {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    main {
+        margin: 10px; 
+        padding: 15px; 
+    }
+
+    button {
+        padding: 10px; 
+    }
+
+    article {
+        padding: 10px; 
+    }
+    #recipe-list {
+        flex-direction: column;
+    }
+
+    .recipe-item {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    h2 {
+        font-size: 1.2em; 
+    }
+
+    button {
+        padding: 8px; 
+    }
+}
